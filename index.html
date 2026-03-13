@@ -6,10 +6,10 @@
     <title>BALAJI STASIONARY</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./img/main logo.jpg">
   </head>
 
   <style>
-    /* Mobile-la scrollbar hide panna indha style */
     .scrollbar-hide::-webkit-scrollbar {
       display: none;
     }
@@ -19,93 +19,203 @@
     }
   </style>
   <body>
-    <nav class="sticky top-0 z-[100] bg-white/90 backdrop-blur-md border-b border-black/5 transition-all duration-300">
-  <div class="bg-[#ff5722] text-white py-1.5 px-4 overflow-hidden whitespace-nowrap">
-    <div class="animate-marquee inline-block text-[10px] font-black uppercase tracking-[0.25em]">
-      Premium Corporate Gifts • Personalized for You • New 2026 Collection Out Now •&nbsp;
-    </div>
-  </div>
-
-  <div class="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between py-5">
-    
-    <div class="flex-shrink-0 w-1/4">
-      <a href="#" class="group flex flex-col leading-none">
-        <span class="text-xl md:text-2xl font-[900] tracking-tighter uppercase text-black group-hover:text-[#ff5722] transition-colors">
-          BALAJI
-        </span>
-        <span class="text-[9px] font-bold tracking-[0.4em] text-gray-400 uppercase">Gift Items</span>
-      </a>
-    </div>
-
-    <div class="hidden lg:flex items-center justify-center gap-10 w-1/2">
-      <a href="#" class="relative text-[13px] font-bold uppercase tracking-widest text-black group">
-        Pens <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#ff5722] group-hover:w-full transition-all duration-300"></span>
-      </a>
-      <a href="#" class="relative text-[13px] font-bold uppercase tracking-widest text-black group">
-        Journals <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#ff5722] group-hover:w-full transition-all duration-300"></span>
-      </a>
-      <a href="#" class="relative text-[13px] font-bold uppercase tracking-widest text-black group">
-        Corporate <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#ff5722] group-hover:w-full transition-all duration-300"></span>
-      </a>
-      <a href="#" class="relative text-[13px] font-bold uppercase tracking-widest text-black group">
-        Limited <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#ff5722] group-hover:w-full transition-all duration-300"></span>
-      </a>
-    </div>
-
-    <div class="flex items-center justify-end gap-4 md:gap-7 w-1/4">
-      <button class="hover:text-[#ff5722] transition-colors hidden md:block">
-        <svg class="w-5 h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"/></svg>
-      </button>
-
-      <button class="relative hover:text-[#ff5722] transition-colors group">
-        <svg class="w-5 h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007z"/></svg>
-        <span class="absolute -top-1.5 -right-1.5 bg-black text-white text-[8px] px-1.5 py-0.5 rounded-full group-hover:bg-[#ff5722]">0</span>
-      </button>
-
-      <button onclick="toggleMenu()" class="flex flex-col gap-1.5 p-1 group cursor-pointer ml-2">
-        <div class="w-6 h-0.5 bg-[#ff5722] group-hover:w-8 transition-all"></div>
-        <div class="w-8 h-0.5 bg-[#ff5722]"></div>
-        <div class="w-6 h-0.5 bg-[#ff5722] self-end group-hover:w-8 transition-all"></div>
-      </button>
-    </div>
-  </div>
-</nav>
-
-<div id="side-menu" class="fixed inset-0 z-[110] transform translate-x-full transition-transform duration-500 ease-in-out invisible">
-  <div onclick="toggleMenu()" class="absolute inset-0 bg-black/40 backdrop-blur-md"></div>
-  
-  <div class="absolute right-0 top-0 h-full w-[90%] md:w-[400px] bg-white shadow-2xl p-12 flex flex-col">
-    <button onclick="toggleMenu()" class="self-end text-4xl font-light mb-12 hover:rotate-90 transition-all duration-300">&times;</button>
-    
-    <div class="flex flex-col gap-8 text-3xl font-serif font-bold italic">
-      <a href="#" class="hover:text-[#ff5722] transition-colors">Pens</a>
-      <a href="#" class="hover:text-[#ff5722] transition-colors">Journals</a>
-      <a href="#" class="hover:text-[#ff5722] transition-colors">Corporate</a>
-      <a href="#" class="hover:text-[#ff5722] transition-colors">Our Story</a>
-      <a href="#" class="hover:text-[#ff5722] transition-colors">Contact</a>
-    </div>
-
-    <div class="mt-auto pt-8 border-t border-gray-100 flex justify-between items-center">
-      <div class="flex gap-8">
-        <a href="https://www.instagram.com/_dxinesx_?igsh=dTFmdHlsMTlvejRm" class="group flex items-center gap-2">
-          <svg class="w-6 h-6 group-hover:text-[#ff5722] transition-colors" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-          </svg>
-        </a>
-
-        <a href="https://www.instagram.com/_dxinesx_?igsh=dTFmdHlsMTlvejRm" class="group flex items-center gap-2">
-          <svg class="w-6 h-6 group-hover:text-[#ff5722] transition-colors" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-8.74h-2.94v-3.403h2.94v-2.511c0-2.915 1.78-4.502 4.379-4.502 1.245 0 2.315.093 2.626.134v3.045l-1.802.001c-1.414 0-1.688.672-1.688 1.658v2.175h3.371l-.439 3.403h-2.932v8.74h5.988c.731 0 1.325-.593 1.325-1.324v-21.351c0-.732-.594-1.325-1.325-1.325z"/>
-          </svg>
-        </a>
+    <nav
+      class="sticky top-0 z-[100] bg-white/90 backdrop-blur-md border-b border-black/5 transition-all duration-300"
+    >
+      <div
+        class="bg-[#ff5722] text-white py-1.5 px-4 overflow-hidden whitespace-nowrap"
+      >
+        <div
+          class="animate-marquee inline-block text-[10px] font-black uppercase tracking-[0.25em]"
+        >
+          Premium Corporate Gifts • Personalized for You • New 2026 Collection
+          Out Now •&nbsp;
+        </div>
       </div>
-      
-      <span class="text-[10px] font-bold text-gray-300 uppercase tracking-widest">Balaji 2026</span>
+
+      <div
+        class="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between py-5"
+      >
+        <div class="flex-shrink-0 w-1/4">
+          <a href="#" class="group flex flex-col leading-none">
+            <span
+              class="text-xl md:text-2xl font-[900] tracking-tighter uppercase text-black group-hover:text-[#ff5722] transition-colors"
+            >
+              BALAJI
+            </span>
+            <span
+              class="text-[9px] font-bold tracking-[0.4em] text-gray-400 uppercase"
+              >Gift Items</span
+            >
+          </a>
+        </div>
+
+        <div class="hidden lg:flex items-center justify-center gap-10 w-1/2">
+          <a
+            href="#"
+            class="relative text-[13px] font-bold uppercase tracking-widest text-black group"
+          >
+            Pens
+            <span
+              class="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#ff5722] group-hover:w-full transition-all duration-300"
+            ></span>
+          </a>
+          <a
+            href="#"
+            class="relative text-[13px] font-bold uppercase tracking-widest text-black group"
+          >
+            Journals
+            <span
+              class="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#ff5722] group-hover:w-full transition-all duration-300"
+            ></span>
+          </a>
+          <a
+            href="#"
+            class="relative text-[13px] font-bold uppercase tracking-widest text-black group"
+          >
+            Corporate
+            <span
+              class="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#ff5722] group-hover:w-full transition-all duration-300"
+            ></span>
+          </a>
+          <a
+            href="#"
+            class="relative text-[13px] font-bold uppercase tracking-widest text-black group"
+          >
+            Limited
+            <span
+              class="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#ff5722] group-hover:w-full transition-all duration-300"
+            ></span>
+          </a>
+        </div>
+
+        <div class="flex items-center justify-end gap-4 md:gap-7 w-1/4">
+          <button
+            class="hover:text-[#ff5722] transition-colors hidden md:block"
+          >
+            <svg
+              class="w-5 h-5 md:w-6 md:h-6"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+              />
+            </svg>
+          </button>
+
+          <button class="relative hover:text-[#ff5722] transition-colors group">
+            <svg
+              class="w-5 h-5 md:w-6 md:h-6"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007z"
+              />
+            </svg>
+            <span
+              class="absolute -top-1.5 -right-1.5 bg-black text-white text-[8px] px-1.5 py-0.5 rounded-full group-hover:bg-[#ff5722]"
+              >0</span
+            >
+          </button>
+
+          <button
+            onclick="toggleMenu()"
+            class="flex flex-col gap-1.5 p-1 group cursor-pointer ml-2"
+          >
+            <div
+              class="w-6 h-0.5 bg-[#ff5722] group-hover:w-8 transition-all"
+            ></div>
+            <div class="w-8 h-0.5 bg-[#ff5722]"></div>
+            <div
+              class="w-6 h-0.5 bg-[#ff5722] self-end group-hover:w-8 transition-all"
+            ></div>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <div
+      id="side-menu"
+      class="fixed inset-0 z-[110] transform translate-x-full transition-transform duration-500 ease-in-out invisible"
+    >
+      <div
+        onclick="toggleMenu()"
+        class="absolute inset-0 bg-black/40 backdrop-blur-md"
+      ></div>
+
+      <div
+        class="absolute right-0 top-0 h-full w-[90%] md:w-[400px] bg-white shadow-2xl p-12 flex flex-col"
+      >
+        <button
+          onclick="toggleMenu()"
+          class="self-end text-4xl font-light mb-12 hover:rotate-90 transition-all duration-300"
+        >
+          &times;
+        </button>
+
+        <div class="flex flex-col gap-8 text-3xl font-serif font-bold italic">
+          <a href="#" class="hover:text-[#ff5722] transition-colors">Pens</a>
+          <a href="#" class="hover:text-[#ff5722] transition-colors"
+            >Journals</a
+          >
+          <a href="#" class="hover:text-[#ff5722] transition-colors"
+            >Corporate</a
+          >
+          <a href="#" class="hover:text-[#ff5722] transition-colors"
+            >Our Story</a
+          >
+          <a href="#" class="hover:text-[#ff5722] transition-colors">Contact</a>
+        </div>
+
+        <div
+          class="mt-auto pt-8 border-t border-gray-100 flex justify-between items-center"
+        >
+          <div class="flex gap-8">
+            <a
+              href="https://www.instagram.com/_dxinesx_?igsh=dTFmdHlsMTlvejRm"
+              class="group flex items-center gap-2"
+            >
+              <svg
+                class="w-6 h-6 group-hover:text-[#ff5722] transition-colors"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                />
+              </svg>
+            </a>
+
+            <a
+              href="https://www.instagram.com/_dxinesx_?igsh=dTFmdHlsMTlvejRm"
+              class="group flex items-center gap-2"
+            >
+              <svg
+                class="w-6 h-6 group-hover:text-[#ff5722] transition-colors"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-8.74h-2.94v-3.403h2.94v-2.511c0-2.915 1.78-4.502 4.379-4.502 1.245 0 2.315.093 2.626.134v3.045l-1.802.001c-1.414 0-1.688.672-1.688 1.658v2.175h3.371l-.439 3.403h-2.932v8.74h5.988c.731 0 1.325-.593 1.325-1.324v-21.351c0-.732-.594-1.325-1.325-1.325z"
+                />
+              </svg>
+            </a>
+          </div>
+
+          <span
+            class="text-[10px] font-bold text-gray-300 uppercase tracking-widest"
+            >Balaji 2026</span
+          >
+        </div>
+      </div>
     </div>
-  </div>
-</div>
     <!--------------------------------------------MAIN SECTION-------------------------->
-    <!-- Unique "Balaji Signature" Feature Section -->
     <section
       class="relative w-full min-h-[550px] md:min-h-[700px] flex items-center overflow-hidden bg-[#F4F1EE]"
     >
@@ -113,7 +223,7 @@
       <div
         class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none"
       >
-        <!-- Oru chinna pattern design for uniqueness -->
+       
         <svg width="100%" height="100%">
           <pattern
             id="pattern"
@@ -170,14 +280,13 @@
           </a>
         </div>
 
-        <!-- Product Image Part (Copyright free style) -->
+       
         <div class="w-full md:w-1/2 order-1 md:order-2">
           <div class="relative group">
             <!-- Main Image Container -->
             <div
               class="aspect-[4/5] md:aspect-square bg-white shadow-[30px_30px_0px_0px_rgba(255,87,34,0.1)] overflow-hidden border border-black/5"
             >
-              <!-- Inga unoda real product photo-va vai bae -->
               <div
                 class="w-full h-full bg-[#fdf2e9] flex items-center justify-center italic text-gray-300"
               >
